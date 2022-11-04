@@ -2,13 +2,16 @@ import React, { useState } from "react";
 // import Page from "./Page";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import "./style.css";
-import SendOffer from "./Modal";
+import SendOfferModal from "./Modal";
 import Card from "./Card";
 import { Pagination } from "../postProject/Pagination";
 import Dropdown from "./Dropdown";
 
 const ApiSearchProject = ({ posts }) => {
   const [page, setPage] = useState(1);
+  const [active, setActive] = useState(null);
+  const [offerId, setOfferId] = useState("");
+  console.log({ active });
   const headers = [
     "Buyer",
     "Project Details",
@@ -23,7 +26,7 @@ const ApiSearchProject = ({ posts }) => {
     <>
       <div>
         <div className="searchProject card row  d-lg-block d-xl-block d-sm-none d-md-block d-none">
-          <Dropdown/>
+          <Dropdown />
           <table className="">
             <tr className="">
               {headers.map((ele, index) => (
@@ -33,22 +36,32 @@ const ApiSearchProject = ({ posts }) => {
             {posts.map((ele, ind) => (
               <tr key={ele.id} className="tableCard mb-2 border ">
                 <td>
-                  <p><PermIdentityIcon/> {ele.name}</p>
+                  <p>
+                    <PermIdentityIcon /> {ele.name}
+                  </p>
                 </td>
-                <td className="">Lorem ipsum dolor sit <br/> amet, consectetur <br/>adipiscing elit.</td>
                 <td className="">
-                 ₹ {Math.floor(Math.random() * 1000)}
+                  Lorem ipsum dolor sit <br /> amet, consectetur <br />
+                  adipiscing elit.
                 </td>
-                <td className="daysAgo ">
-                 2 Days ago
-                </td>
+                <td className="">₹ {Math.floor(Math.random() * 1000)}</td>
+                <td className="daysAgo ">2 Days ago</td>
                 <td className="">Active</td>
                 <td className=" ">
                   <PermIdentityIcon className="offer" fontSize="10" />
                   <span>{Math.floor(Math.random() * 20)}+</span>
                 </td>
                 <td>
-                  <SendOffer title={"Send Offer"} />
+                  <button
+                    type="button"
+                    className="btn btn-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    onClick={() => setOfferId(ind)}
+                  >
+                    Send Offer
+                  </button>
+                  {offerId === ind && <SendOfferModal />}
                 </td>
               </tr>
             ))}

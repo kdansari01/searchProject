@@ -37,7 +37,7 @@ import axios from "axios";
 // import Modal from "../searchProject/Modal";
 // import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 // import { Pagination } from "./Pagination";
-import SearchIcon from '@mui/icons-material/Search';      
+import SearchIcon from "@mui/icons-material/Search";
 // import PostCard from "../postProject/card";
 // import AddIcon from "@mui/icons-material/Add";
 // import SortBy from "./Dropdown";
@@ -76,12 +76,9 @@ const SearchProject = () => {
           </form>
         </div>
 
-        <div className="searchProjectMain d-flex justify-content-center container">
-        <Card post={posts} className=""/>
-
-
-          {/* <Table posts={posts} headers={headers} /> */}
-          <ApiSearchProject posts={posts}/>
+        <div className="searchProjectMain d-flex justify-content-center">
+          <Card post={posts} className="" />
+          <ApiSearchProject posts={posts} />
         </div>
         <Footer />
       </div>

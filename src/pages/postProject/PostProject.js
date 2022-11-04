@@ -3,12 +3,9 @@ import Footer from "../../component/footer/Footer";
 import { HeroBackground } from "../../component/hero/HeroBackground";
 import { useState, useEffect } from "react";
 import axios from "axios";
-// import Modal from "../searchProject/Modal";
-// import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-// import { Pagination } from "./Pagination";
 import PostCard from "./card";
 import AddIcon from '@mui/icons-material/Add';
-import SortBy from "./Dropdown";
+import SortBy from "./PostDropDown";
 import Table from "./Table"
 const PostProject = () => {
   const [posts, setPost] = useState([]);
@@ -37,7 +34,7 @@ const PostProject = () => {
         <div className=" manageProjectAcrive d-flex ">
           
           <div className="activePouse margin d-lg-block d-xl-block d-sm-none d-md-block d-none">
-           <SortBy/>
+           <SortBy title={"Sort by"} active={"Active"} pouse={"Pouse"}/>
           </div>
 
           <div className="margin">

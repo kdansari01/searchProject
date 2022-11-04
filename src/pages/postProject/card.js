@@ -1,6 +1,7 @@
 import React from "react";
-import Modal from "../searchProject/Modal";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import { Button } from "@mui/material";
+import EditIcon from '@mui/icons-material/Edit';
 
 const PostCard = () => {
   return (
@@ -32,7 +33,8 @@ const PostCard = () => {
                 <PermIdentityIcon className="offer" fontSize="20" />
                 {Math.floor(Math.random() * 20)}+
               </div>
-              <Modal />
+              <Button variant="contained" className="bg-dark text-light"><EditIcon/>Manage</Button>
+
             </div>
           </div>
         </div>

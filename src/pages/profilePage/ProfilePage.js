@@ -1,5 +1,6 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
+import "./profile.css"
 import Profile from "../../assests/image/profile.png";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 import IconButton from "@mui/material/IconButton";
@@ -8,10 +9,10 @@ const ProfilePage = () => {
   return (
     <>
       <HeroBackground title={"User Profile"} />
-      <div className="light-bg">
-        <div className="card mx-5">
-          <div className="row col-12 d-flex justify-content-center p-4">
-            <div className="col-lg-3 col-md-6 col-12">
+      <div className="profileHead light-bg p-4 p-sm-2 ">
+        <div className="card">
+          <div className="row col-12 d-flex justify-content-center p-4 ">
+            <div className="col-lg-3 col-md-6 col-12 ">
               <img
                 src={Profile}
                 alt="profile"

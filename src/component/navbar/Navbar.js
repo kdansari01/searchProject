@@ -5,10 +5,11 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Profile from "../../assests/image/profile.png"
 import { NavLink } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
+import Hamburger from "../../assests/image/hamburger.png"
+
+
 const Navbar = () => {
 
-
- 
   return (
       <nav className="navbar navbar-expand-lg  ">
         <div className="container-fluid d-flex justify-content-around px-4">
@@ -24,7 +25,8 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon"></span> */}
+            <img src={Hamburger} alt="ham"/>
           </button>
           <div className="collapse navbar-collapse flex-grow-2 " id="navbarSupportedContent">
           <form className="searchBarSection d-flex m-sm-2 mt-4 " role="search">

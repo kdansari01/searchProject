@@ -25,7 +25,8 @@ const Dropdown = () => {
     <div className="d-lg-block d-xl-block d-sm-none d-md-block d-none ">
       <div className="bg-light mb-4 container-fluid">
         <h5 className="text-muted">Filter By</h5>
-        <div className="justify-content- row d-flex col-12 ">
+       
+        <div className="justify-content- row d-flex col-12 "  >
           <div className="col-lg-3 col-md-3 col-4">
             <Box sx={{ minWidth: 120 }}>
               <label>Category</label>

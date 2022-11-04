@@ -1,0 +1,36 @@
+.flex-1 {
+    flex: 1;
+  }
+  
+  .app-container {
+    height: 100px;
+  }
+  
+  .img-container {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .d-time {
+    background: lightskyblue;
+    color: blue;
+    width: fit-content;
+    padding-inline: 3px;
+    border-radius: 4px;
+  }
+  
+  .send-offer {
+    height: 30px;
+    width: fit-content;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 4px;
+    padding-inline: 10px;
+  }
+
+  .svg-color svg {
+    fill:red;
+  }

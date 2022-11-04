@@ -1,0 +1,26 @@
+.uploadButton{
+    background: white;
+    color:black;
+}
+.profileHead{
+    padding: 5rem;
+}
+
+@media (min-width: 768px) and (max-width:1400px){
+    .uploadButton{
+      position: relative;
+      top:6.5rem;
+      left: -2.5rem;
+    }
+    
+  }
+  @media (min-width:320px ) and (max-width:768px){
+    .uploadButton{
+      position: relative;
+      top:4rem;
+      left: -2.5rem;
+    }
+    
+  }
+  
+  

@@ -3,7 +3,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export default function SortBy() {
+export default function SortBy({title,active,pouse}) {
   const [state, setState] = React.useState('');
 
   const handleChange = (event) => {
@@ -20,10 +20,10 @@ export default function SortBy() {
           className="text-light fw-bold"
         >
           <MenuItem value="">
-            <em>Sort by</em>
+            <em> {title} </em>
           </MenuItem>
-          <MenuItem value={1}>Active</MenuItem>
-          <MenuItem value={2}>Pouse</MenuItem>
+          <MenuItem value={1}>{active}</MenuItem>
+          <MenuItem value={2}>{pouse}</MenuItem>
         </Select>
       </FormControl>
     </div>
