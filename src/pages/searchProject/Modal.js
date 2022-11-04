@@ -1,12 +1,11 @@
 import { TextField } from '@mui/material'
 import React from 'react'
-import EditIcon from '@mui/icons-material/Edit';
-const Modal = ({title,icon}) => {
+const SendOffer = ({title}) => {
   return (
     <div>
-<button type="button" className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  {icon} {title}
-</button>
+   <button type="button" className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   {title}
+    </button>
 
 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog">
@@ -55,4 +54,4 @@ const Modal = ({title,icon}) => {
   )
 }
 
-export default Modal
+export default SendOffer

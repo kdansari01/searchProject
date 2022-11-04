@@ -63,7 +63,7 @@ const SearchProject = () => {
       <div>
         <HeroBackground title={"Search Project"} />
         <div className="d-flex justify-content-center">
-          <form className="searchProjects d-flex m-sm-2 col-lg-12 col-md-10 col-6" role="search">
+          <form className="searchProjects d-flex m-sm-2 " role="search">
             <input
               className="searchProInput  me-2"
               type="search"

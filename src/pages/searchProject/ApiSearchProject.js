@@ -2,11 +2,10 @@ import React, { useState } from "react";
 // import Page from "./Page";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import "./style.css";
-import Modal from "./Modal";
+import SendOffer from "./Modal";
 import Card from "./Card";
 import { Pagination } from "../postProject/Pagination";
 import Dropdown from "./Dropdown";
-import NewDropdown from "./NewDropdown";
 
 const ApiSearchProject = ({ posts }) => {
   const [page, setPage] = useState(1);
@@ -22,11 +21,9 @@ const ApiSearchProject = ({ posts }) => {
 
   return (
     <>
-      <Card post={posts} className="" />
       <div>
         <div className="searchProject card row  d-lg-block d-xl-block d-sm-none d-md-block d-none">
           <Dropdown/>
-          {/* <NewDropdown/> */}
           <table className="">
             <tr className="">
               {headers.map((ele, index) => (
@@ -51,7 +48,7 @@ const ApiSearchProject = ({ posts }) => {
                   <span>{Math.floor(Math.random() * 20)}+</span>
                 </td>
                 <td>
-                  <Modal title={"Send Offer"} />
+                  <SendOffer title={"Send Offer"} />
                 </td>
               </tr>
             ))}

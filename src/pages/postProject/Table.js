@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import Modal from '../searchProject/Modal'
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import { Pagination } from './Pagination';
 import EditIcon from '@mui/icons-material/Edit';
 import "./style.css"
+import Button from '@mui/material/Button';
+
 const Table = ({headers,posts}) => {
 const [page, setPage] = useState(1);
 
@@ -35,7 +36,9 @@ const [page, setPage] = useState(1);
                 <td className="text-center">Active</td>
                 <td>
                   {/* <button>Send offer</button> */}
-                  <Modal title={"Manage"} />
+                  {/* <Modal title={"Manage"} /> */}
+
+            <Button variant="contained" className="bg-dark text-light"><EditIcon/>Manage</Button>
 
                 </td>
               </tr>

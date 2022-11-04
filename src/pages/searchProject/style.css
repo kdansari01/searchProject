@@ -43,6 +43,39 @@ tr:nth-child(even) {
   padding-left: 12px;
 
 }
+@media (min-width:300px) and (max-width:768px) {
+  .searchProInput {
+    width: 20rem;
+    height: 3rem;
+    background: #FFFFFF;
+    border: 1px solid #07A189;
+    box-shadow: 3px 18px 37px 10px rgb(165 165 165 / 20%);
+    border-radius: 10px;
+    outline: #07A189;
+    padding-left: 12px;
+  
+  }
+  .searchProjects {
+    position: relative;
+    top: -9rem;
+    left: 1.6rem;
+  }
+  .searchIconMain {
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -14%;
+    padding: 10%;
+    height: 75%;
+    top: 10%;
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+  }
+}
 
 .searchIcon {
   position: relative;
@@ -55,7 +88,7 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: -11%;
+  left: -14%;
   padding: 10px;
   height: 75%;
   top: 10%;
