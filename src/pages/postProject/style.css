@@ -1,0 +1,96 @@
+
+
+.manageProjectAcrive{
+    position: relative;
+    float: right;
+    top: -13rem;
+    right: 2rem;
+    color: white;
+    align-items: center;
+}
+.margin{
+padding-left: 2rem;
+
+}
+.manageProjectBtn{
+    background: #000000;
+    box-shadow: 3px 18px 37px 10px rgb(165 165 165 / 20%);
+    border-radius: 10px;
+    width: 12rem;
+    height: 2.7rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.manageProjectBtn1{
+    background: #000000;
+    box-shadow: 3px 18px 37px 10px rgb(165 165 165 / 20%);
+    border-radius: 10px;
+    width: 4rem;
+    height: 2.7rem;
+    color: white;
+    /* font-size: 3rem; */
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.activePouse{
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.activePouse input{
+    width: 2rem;
+    height: 1.4rem;
+}
+.offer{
+    background: #E2F1EE;
+    color: #079E87;
+    border-radius: 50%;
+}
+
+.searchProjectMain{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -3rem;
+    
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+  }
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background: rgb(240, 239, 239);
+    color: #07A189;
+  }
+
+  .tableCard{
+
+  }
+  .activeMob{
+    background: #C3F2BB70;
+    color: #28A813;
+    background: rgba(195, 242, 187, 0.44);
+    border-radius: 8px;
+    width: 4rem;
+    height: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .searchProject{
+    width: 90vw;
+  }
+
+  

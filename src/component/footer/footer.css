@@ -1,0 +1,36 @@
+.logo{
+    justify-content: center;
+}
+
+.logo1{
+    background: #07A189;
+    border-radius: 15px;
+    width: 46%;
+    height: 31%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.footer{
+    background: #FBFBFB;
+}
+@media (min-width:300px) and (max-width:500px){
+
+    .logo1{
+        background: #07A189;
+        border-radius: 15px;
+        width: 86%;
+        height: 31%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+    .logo{
+       margin-bottom: 2%;
+    }
+    
+}
