@@ -37,9 +37,9 @@ const Footer = () => {
         </div>
         <div className="social px-5  col-lg-3 col-md-4 col-12">
           <h3 className="mx-2">Follow Us</h3>
-          <Twitter style={{ fontSize: "40px", marginLeft: "10px" }} />
-          <Facebook style={{ fontSize: "40px", marginLeft: "10px" }} />
-          <Instagram style={{ fontSize: "40px", marginLeft: "10px" }} />
+          <Twitter className="twitter" style={{ fontSize: "40px", marginLeft: "10px" }} />
+          <Facebook className="facebook" style={{ fontSize: "40px", marginLeft: "10px" }} />
+          <Instagram className="instagram" style={{ fontSize: "40px", marginLeft: "10px" }} />
         </div>
       </div>
     </div>

@@ -44,10 +44,30 @@
     text-align: center;
     align-items: center;
     color: white;
+    cursor: pointer;
 }
 .footer-icons{
     font-size: 40px;
 }
+
+.twitter:hover{
+    cursor: pointer;
+    color: skyblue;
+}
+.facebook:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.instagram:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+
+
+
 
 
 @media (min-width:300px) and (max-width:756px){
