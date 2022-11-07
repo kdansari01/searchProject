@@ -1,5 +1,7 @@
 import React from "react";
-import "./pagination.css"
+import "./pagination.css";
+import arrowRight from "../../assests/image/rightarrow.png";
+import arrowLeft from "../../assests/image/leftarrow.png";
 export const Pagination = ({ value, onChange, range }) => {
   let pattern = null;
 
@@ -24,21 +26,31 @@ export const Pagination = ({ value, onChange, range }) => {
   }
   return (
     <div className="container">
-      <button className="btn" disabled={value <= 1} onClick={() => changeNumber(value - 1)}>
-        {"<"}
-      </button>
+      <img
+        src={arrowRight}
+        className={
+          `btn-pagination-arrow-1` + " " + (value <= 1 ? "disabled-1" : "")
+        }
+        disabled={value <= 1}
+        onClick={() => changeNumber(value - 1)}
+      ></img>
       {pattern.map((label) => (
         <button
-          className={value === label ? "Isactive" : "btn"}
+          className={value === label ? "Isactive-pagination" : "btn-pagination"}
           onClick={() => changeNumber(label)}
           isActive={value === label}
         >
           {label}
         </button>
       ))}
-      <button  className="btn" disabled={value >= range} onClick={() => changeNumber(value + 1)}>
-        {">"}
-      </button>
+      <img
+        src={arrowLeft}
+        className={
+          `btn-pagination-arrow-2` + " " + (value >= range ? "disabled-1" : "")
+        }
+        disabled={value >= range}
+        onClick={() => changeNumber(value + 1)}
+      ></img>
     </div>
   );
 };

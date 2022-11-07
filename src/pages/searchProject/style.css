@@ -29,6 +29,57 @@ tr:nth-child(even) {
   font-size: 1rem;
 }
 
+.modal-title h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+ .input-lable{
+  font-size: 16px;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+  color: #000;
+}
+
+.modal-content input {
+  background-color: #fff;
+  border: 1px solid #07A189;
+  outline: none;
+  box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
+  border-radius: 15px;
+
+}
+
+.modal-content input:focus {
+  border: 1px solid #07A189;
+}
+
+.modal-content input::placeholder {
+  color: #07A189;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: none !important;
+}
+
+.modal-content textarea {
+  background-color: #fff;
+  border: 1px solid #07A189;
+  outline: none;
+  box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
+  border-radius: 15px;
+}
+
+.modal-content textarea:focus {
+  border: 1px solid #07A189;
+}
+
+.modal-content textarea::placeholder {
+  color: #07A189;
+}
+
 .searchProjects {
   position: relative;
   top: -11rem;
@@ -55,7 +106,7 @@ tr:nth-child(even) {
     border-radius: 10px;
     outline: #07A189;
     padding-left: 12px;
-  
+
   }
   .searchProjects {
     position: relative;

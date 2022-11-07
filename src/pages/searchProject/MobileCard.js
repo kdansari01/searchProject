@@ -2,11 +2,11 @@ import { useState } from "react";
 import User from "../../assests/image/user.svg";
 import "./card.css";
 import SendOfferModal from "./Modal";
-export const MobileCard = ({ name, price, deleveryTime, createdAt }) => {
-  const [offerId, setOfferId] = useState("");
-
+export const MobileCard = ({ name, price, deleveryTime, createdAt, id }) => {
+  const [offerModal, setOfferModal] = useState(false);
   return (
     <div className="card mt-3">
+      <SendOfferModal offerModal={offerModal} setOfferModal={setOfferModal} />
       <div className="d-flex justify-content-start app-container">
         <div className="border img-container d-flex justify-content-center align-items-center">
           <img src={User} alt="user" height="50%" className="svg-color" />
@@ -32,11 +32,10 @@ export const MobileCard = ({ name, price, deleveryTime, createdAt }) => {
               className="btn btn-dark text-truncate"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
-              onClick={() => setOfferId({ name })}
+              onClick={() => setOfferModal(true)}
             >
               Send Offer
             </button>
-            {offerId === { name } && <SendOfferModal />}
           </div>
         </div>
       </div>

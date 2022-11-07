@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import Page from "./Page";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import "./style.css";
 import SendOfferModal from "./Modal";
 import Card from "./Card";
 import { Pagination } from "../postProject/Pagination";
 import Dropdown from "./Dropdown";
+import { ApiSearchProjectChild } from "./ApiSearchProjectChild";
 
 const ApiSearchProject = ({ posts }) => {
   const [page, setPage] = useState(1);
   const [active, setActive] = useState(null);
-  const [offerId, setOfferId] = useState("");
-  console.log({ active });
+  const [offerModal, setOfferModal] = useState(false);
   const headers = [
     "Buyer",
     "Project Details",
@@ -34,36 +33,7 @@ const ApiSearchProject = ({ posts }) => {
               ))}
             </tr>
             {posts.map((ele, ind) => (
-              <tr key={ele.id} className="tableCard mb-2 border ">
-                <td>
-                  <p>
-                    <PermIdentityIcon /> {ele.name}
-                  </p>
-                </td>
-                <td className="">
-                  Lorem ipsum dolor sit <br /> amet, consectetur <br />
-                  adipiscing elit.
-                </td>
-                <td className="">₹ {Math.floor(Math.random() * 1000)}</td>
-                <td className="daysAgo ">2 Days ago</td>
-                <td className="">Active</td>
-                <td className=" ">
-                  <PermIdentityIcon className="offer" fontSize="10" />
-                  <span>{Math.floor(Math.random() * 20)}+</span>
-                </td>
-                <td>
-                  <button
-                    type="button"
-                    className="btn btn-dark"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    onClick={() => setOfferId(ind)}
-                  >
-                    Send Offer
-                  </button>
-                  {offerId === ind && <SendOfferModal />}
-                </td>
-              </tr>
+              <ApiSearchProjectChild {...ele} />
             ))}
           </table>
           <div className="justify-content-center d-flex text-center mt-2">

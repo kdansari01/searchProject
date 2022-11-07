@@ -10,8 +10,6 @@ const Card = ({ post }) => {
         <div className="row col-12 d-flex mt-4 ">
           <div className="px-4  card bg-light text-dark text-end container">
             <h3 className="">Filter</h3>
-
-         
           </div>
           {post.map((ele) => (
             <MobileCard {...ele} />
