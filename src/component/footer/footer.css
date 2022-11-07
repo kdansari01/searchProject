@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .footer {
-    max-height: 400px;
+    /* max-height: 437px; */
     min-height: 300px;
     padding: 10px 0;
     background: #FBFBFB;
@@ -52,7 +52,14 @@
 
 @media (min-width:300px) and (max-width:500px){
 .footer .wrapper{
-    margin: 0;
+    margin: -11px;
+    padding: 2px;
+}
+.social{
+    margin-left: -33px;
+}
+.product{
+    margin-top: 4px;
 }
     .logo1{
         background: #07A189;

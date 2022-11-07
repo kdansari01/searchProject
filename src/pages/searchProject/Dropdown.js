@@ -1,25 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
+// import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Button from '@mui/material/Button';
 const Dropdown = () => {
-  // const [state, setState] = useState("");
-
-  // const handleChange = (event) => {
-  //   setState(event.target.value);
-  // };
-
-  // const dropdown = [
-  //   "Category",
-  //   "Sub-Category",
-  //   "Delivery Time",
-  //   "Country",
-  //   "Post Day",
-  //   "Pricing",
-  // ];
 
   return (
     <div className="d-lg-block d-xl-block d-sm-none d-md-block d-none ">
@@ -34,10 +20,8 @@ const Dropdown = () => {
             
                 <Select
                   label=""
-                  // labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={state}
-                  // onChange={handleChange}
+                 
                 >
 
                   <MenuItem value={1}>Ten</MenuItem>
@@ -54,10 +38,8 @@ const Dropdown = () => {
             
                 <Select
                   label=""
-                  // labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={state}
-                  // onChange={handleChange}
+                 
                 >
 
                   <MenuItem value={1}>Ten</MenuItem>
@@ -74,10 +56,8 @@ const Dropdown = () => {
             
                 <Select
                   label=""
-                  // labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={state}
-                  // onChange={handleChange}
+                 
                 >
 
                   <MenuItem value={1}>Ten</MenuItem>
@@ -94,10 +74,8 @@ const Dropdown = () => {
             
                 <Select
                   label=""
-                  // labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={state}
-                  // onChange={handleChange}
+             
                 >
 
                   <MenuItem value={1}>Ten</MenuItem>
@@ -114,10 +92,8 @@ const Dropdown = () => {
             
                 <Select
                   label=""
-                  // labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={state}
-                  // onChange={handleChange}
+                 
                 >
 
                   <MenuItem value={1}>Ten</MenuItem>
@@ -134,10 +110,8 @@ const Dropdown = () => {
             
                 <Select
                   label=""
-                  // labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={state}
-                  // onChange={handleChange}
+              I
                 >
 
                   <MenuItem value={1}>Ten</MenuItem>

@@ -1,5 +1,6 @@
-
-
+body{
+  overflow-x: hidden;
+}
 .manageProjectAcrive{
     position: relative;
     float: right;
@@ -91,6 +92,13 @@ table {
 
   .searchProject{
     width: 90vw;
+  }
+
+  @media (min-width:300px) and (max-width:400px) {
+    .manageProjectBtn1{
+      position: relative;
+      top: 2rem;
+    }
   }
 
   

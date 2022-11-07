@@ -1,6 +1,6 @@
 import React from "react";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
-import SendOffer from "./Modal";
+// import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+// import SendOffer from "./Modal";
 import { MobileCard } from "./MobileCard";
 
 const Card = ({ post }) => {

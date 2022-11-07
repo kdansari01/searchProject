@@ -6,7 +6,7 @@ import EditIcon from '@mui/icons-material/Edit';
 const PostCard = () => {
   return (
     <div className="d-lg-none d-xl-none d-sm-block d-md-none">
-      <div className="row">
+      <div className="row p-3 ">
         <div className="card p-4">
           <div className="card-body">
             <div className="d-flex justify-content-between ">

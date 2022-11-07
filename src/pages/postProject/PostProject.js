@@ -30,7 +30,7 @@ const PostProject = () => {
   return (
     <>
       <div>
-        <HeroBackground title={"Manage Project"} />
+        <HeroBackground  title={"Manage Project"} />
         <div className=" manageProjectAcrive d-flex ">
           
           <div className="activePouse margin d-lg-block d-xl-block d-sm-none d-md-block d-none">

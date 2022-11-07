@@ -27,7 +27,7 @@ export const Pagination = ({ value, onChange, range }) => {
   return (
     <div className="container">
       <img
-        src={arrowRight}
+        src={arrowRight} alt=".."
         className={
           `btn-pagination-arrow-1` + " " + (value <= 1 ? "disabled-1" : "")
         }

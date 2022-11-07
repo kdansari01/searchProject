@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer container-fluid border ">
       <div className="wrapper row col-12 d-flex pt-4">
-        <div className="logo col-lg-3 px-4 col-md-4 col-4">
+        <div className="logo col-lg-3 px-4 col-md-4 col-6">
           <h1 className="logo1  text-center">Logo</h1>
           <div>
             <p>
@@ -15,27 +15,27 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="company px-4 col-lg-2 col-md-4 col-4">
+        <div className="company px-4 col-lg-2 col-md-4 col-6">
           <h3>Company</h3>
           <p>About us</p>
           <p>Career</p>
           <p>team</p>
           <p>Contact</p>
         </div>
-        <div className="product px-4 col-lg-2 col-md-4 col-4">
+        <div className="product px-4 col-lg-2 col-md-4 col-6">
           <h3>Product</h3>
           <p>service</p>
           <p>FreeLancer</p>
           <p>Features</p>
           <p>Development</p>
         </div>
-        <div className="link  px-4 col-lg-2 col-md-4 col-4">
+        <div className="link  px-4 col-lg-2 col-md-4 col-6">
           <h3>Link</h3>
           <p>Privacy</p>
           <p>term & condition</p>
           <p>FAQ</p>
         </div>
-        <div className="social px-5  col-lg-3 col-md-4 col-4">
+        <div className="social px-5  col-lg-3 col-md-4 col-12">
           <h3 className="mx-2">Follow Us</h3>
           <Twitter style={{ fontSize: "40px", marginLeft: "10px" }} />
           <Facebook style={{ fontSize: "40px", marginLeft: "10px" }} />
