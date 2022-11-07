@@ -5,10 +5,10 @@ import SendOfferModal from "./Modal";
 export const MobileCard = ({ name, price, deleveryTime, createdAt, id }) => {
   const [offerModal, setOfferModal] = useState(false);
   return (
-    <div className="card mt-3">
+    <div className="mobileCard card mt-3 px-4 d-flex justify-content-center">
       <SendOfferModal offerModal={offerModal} setOfferModal={setOfferModal} />
-      <div className="d-flex justify-content-start app-container">
-        <div className="border img-container d-flex justify-content-center align-items-center">
+      <div className="d-flex justify-content-start app-container ">
+        <div className="userLogo border img-container d-flex justify-content-center align-items-center">
           <img src={User} alt="user" height="50%" className="svg-color" />
         </div>
         <div className="flex-1 px-3">
@@ -29,7 +29,7 @@ export const MobileCard = ({ name, price, deleveryTime, createdAt, id }) => {
             </main>
             <button
               type="button"
-              className="btn btn-dark text-truncate"
+              className="sendBtn btn btn-dark "
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               onClick={() => setOfferModal(true)}
