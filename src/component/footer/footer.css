@@ -50,7 +50,7 @@
 }
 
 
-@media (min-width:300px) and (max-width:500px){
+@media (min-width:300px) and (max-width:756px){
 .footer .wrapper{
     margin: -11px;
     padding: 2px;
@@ -64,7 +64,7 @@
     .logo1{
         background: #07A189;
         border-radius: 15px;
-        width: 86%;
+        width: 100px;
         height: 31%;
         display: flex;
         justify-content: center;
