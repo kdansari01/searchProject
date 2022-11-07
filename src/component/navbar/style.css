@@ -135,8 +135,32 @@
     width: 4.3rem;
     height: auto;
   }
+  
 
 }
+@media (min-width: 300px) and (max-width: 400px){
+  .rightNavabr{
+   margin-left: 15px;
+  }
+  .searchButton {
+    background: #000000;
+    box-shadow: 3px 18px 37px 10px rgb(165 165 165 / 20%);
+    border-radius: 16px;
+    width: 4rem;
+    height: auto;
+  }
+  .searchInput {
+    width:14rem;
+    height: 2.5rem;
+    background: #FFFFFF;
+    border: 1px solid #07A189;
+    box-shadow: 3px 18px 37px 10px rgb(165 165 165 / 20%);
+    border-radius: 15px;
+    outline: #07A189;
+
+  }
+}
+
 @media (min-width: 820px) and (max-width: 920px) {
   
   .navbar-brand {
